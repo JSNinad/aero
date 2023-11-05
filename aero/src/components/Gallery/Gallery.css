@@ -1,0 +1,254 @@
+/* Looper styles */
+@keyframes slideAnim {
+  from {
+    transform: translateX(1%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* .looper {
+  width: 100%;
+  overflow: hidden;
+ 
+} */
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;   
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+
+  /* animation: none; */
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.looper.paused .looper__listInstance {
+  animation-play-state: paused;
+}
+
+
+/* Example content styles */
+
+/* html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+/* #root { */
+  /* flex: 1; */
+  /* padding: 16px; */
+  /* font-family: sans-serif; */
+  /* color: var(--offwhite);   */
+  /* background: linear-gradient(-45deg, #4132e6, #05031a);   */
+/* } */
+
+/* to change the card container size */
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 100%;
+  /* height: 180px;
+  width: 150px; */
+  margin: 1rem;
+  /* border-style: solid; */
+  /* border-width: 6px; */
+  /* border-color: #db343c; */
+  text-align: center;
+  /* border-width: 10px; Set border width */
+  /* border-color: #663399;  */
+  /* border-style: double; Set border style (double) */
+  border-radius: 20px; /*Optional: Add border radius for rounded corners*/
+  /* padding: 20px;  */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  
+  /* border-radius: 5px; */
+  /* background: rgba(255, 255, 255, 0.915);   */
+  /* box-shadow: 0 0 10px 5px #946ae7; */
+}
+.contentBlock1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width:100% ;
+  margin: 1rem;
+  /* border-style: solid; */
+  /* border-width: 6px; */
+  /* border-color: #663399; */
+  border-radius: 20px;
+  /* box-shadow: 0 0 10px 5px #946ae7; */
+  /* height: 180px;
+  width: 150px; */
+  /* margin: 10px; */
+  /* padding: 16px;  */
+  text-align: center;
+  /* border-radius: 5px; */
+  /* background: rgba(255, 255, 255, 0.915);  */
+  /* box-shadow: 0 0 10px 5px #946ae7; */
+  /* border-width: 10px; Set border width */
+  /* border-color: #3498db; Set border color */
+  /* border-style: double; Set border style (double) */
+  /* border-radius: 20px; Optional: Add border radius for rounded corners */
+  /* padding: 20px;  */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+
+}
+
+
+
+/* Add this to your Gallery.css file */
+.contentImage {
+  transition: transform 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.05);  
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+}
+
+#one{
+  height:100%;
+  width: 100%;
+  display: block;
+  max-width: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.looper.paused .contentImage:hover {
+  transform: scale(1.1);
+  
+}
+
+.up{
+  /* top:3rem; */
+  margin-top: 9rem;
+}
+
+/* 
+@keyframes fireAnimation {
+  0% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 0 100% 0 0;
+  }
+  50% {
+    border-radius: 50% 0 0 100%;
+  }
+  75% {
+    border-radius: 0 0 100% 0;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+
+.fire-border {
+  
+  background-color: #ff5733;
+  animation: fireAnimation 5s infinite linear;
+} */
+
+
+/* @keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-in-from-bottom {
+  animation: slideInFromBottom 1s  ease-out;
+} */
+
+
+/* @keyframes changeBorderColor {
+  0% {
+    border-color: #db3434;
+  }
+  50% {
+    border-color: #3442db;
+  }
+  100% {
+    border-color: #34dba9;
+  }
+} */
+
+.borderFrame {
+  border-width: 10px; 
+  border-color: #db343c; /* Set initial border color */
+  border-style: double solid double solid;
+  border-radius: 20px; /* Optional: Add border radius for rounded corners */
+  padding: 20px; /* Add some padding inside the frame */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  background: rgb(63,94,251);
+background: radial-gradient(circle, black 82%, rgb(7, 11, 196) 95%);
+  /* animation: changeBorderColor 10s infinite;  */
+  border-color: brown;
+}
+
+
+.line {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: white;
+  transform: translateY(-50%);
+  z-index: -1;
+  opacity: 0.7;
+}
+.line2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: white;
+  transform: translateY(-50%);
+  z-index: -1;
+  opacity: 0.7;
+}
+.line3 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: white;
+  transform: translateY(-50%);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 24px;
+  color: white;
+}
+

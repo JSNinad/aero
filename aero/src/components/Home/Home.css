@@ -1,0 +1,306 @@
+@keyframes scale-up {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.title {
+  animation: scale-up 1s ease-in-out; 
+}
+
+.countdown-timer {
+  display: flex; 
+}
+.countdown-item {
+  color: #fff;
+  text-align: center;
+  transform: perspective(100px) rotateX(10deg) translateY(0) translateZ(0);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 2px solid #fff; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(249, 2, 2, 0.8); 
+  padding: 0.3em;
+  margin-right: 3em;
+  margin-top: 2em;
+  margin-left: 1.4em;
+
+}
+.countdown-item:hover {
+  transform: perspective(100px) rotateX(0deg) translateY(-10px) translateZ(10px);
+  box-shadow: 0px 8px 16px rgba(167, 161, 161, 0.4); 
+}
+.glow-on-hover:hover{
+  background-color: red;
+  color: white;
+  opacity: 0.8;
+}
+.swiper-slide {
+  width: 18rem;
+  height: 20rem;
+  /* margin-left: 0.5rem; */
+  position: relative;
+}
+.swiper-slide img {
+  width: 20rem;
+  height: 22rem;
+  border-radius: 2rem;
+  /* object-fit:  !important; */
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-controler .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+.slider-controler .slider-arrow {
+  background: rgba(255, 255, 255, 0.607);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  left: 42%;
+  /* top:2.3rem; */
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.slider-controler .slider-arrow::after {
+  content: '';
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 15rem !important;
+  bottom: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  background-color: white;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #6a59ff;
+}
+.content-container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  font-size: 1.3rem;
+  text-align: justify;
+  color: whitesmoke;
+  /* width: 30%; */
+
+}
+/* .content-fluid {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+.gradient-color{
+    background: #0700c5;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+    -webkit-text-fill-color:transparent; 
+}
+.tilted-container {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease;
+}
+
+/* .grad{
+  color:#080404;
+} */
+/* .text-cut {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 4vw;
+  background-image: url('../../images/grad.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+  color: transparent;
+  margin-bottom: -2vw; 
+  z-index: 2; 
+} */
+.text-grad{
+  background: -webkit-linear-gradient(#f4f402de,#eaa910 );
+  font-weight: bold;
+  font-family:cursive;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* ............... Media Queries .....................  */
+.countdown-number {
+  font-size: 2rem; 
+}
+.countdown-label {
+  font-size: 1.5rem; 
+}
+
+/* Media query for small devices (phones) */
+@media (max-width: 767px) {
+  .countdown-number {
+    font-size: 1.2rem; 
+  }
+
+  .countdown-label {
+    font-size: 1rem; 
+  }
+  .countdown-item{
+    padding: 0.3em;
+    margin-right: 0.3em;
+    margin-top: 2em;
+    margin-left: 0.3em;
+  
+  }
+  .small-device{
+    margin-top: 6rem;
+  }
+}
+/* Media query for small devices (phones) */
+@media (max-width: 1100px) {
+  .countdown-number {
+    font-size: 1.2rem; 
+  }
+
+  .countdown-label {
+    font-size: 1rem; 
+  }
+  .countdown-item{
+    padding: 0.3em;
+    margin-right: 0.3em;
+    margin-top: 2em;
+    margin-left: 0.3em;
+  
+  }
+  .small-device{
+    margin-top: 6rem;
+  }
+}
+
+
+
+
+@media (max-width: 800px) {
+  .slider-controler .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+    
+  }
+  .slider-controler .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+  .swiper_container {
+    height: 18rem;
+  }
+  .swiper-slide {
+    width: 16rem !important;
+    height: 20rem !important;
+  }
+  .swiper-slide img {
+    width: 14rem !important;
+    height: 20rem !important;
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+  .slider-controler .swiper-button-next {
+    left: 65% !important;
+    transform: translateX(-70%) !important;
+  }
+  .swiper-slide img {
+    width: 14rem !important;
+    height: 20rem !important;
+    /* align-items: center; */
+  }
+  .slider-controler .swiper-button-prev {
+    left: 35% !important;
+    color: white;
+    transform: translateX(-30%) !important;
+  }
+}
+
+
+@media(min-width:800px){
+  .tilted-container:hover {
+    transform: scale(1.04);
+  }
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .tilted-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: none;
+  }
+  .tilted-container:hover {
+    transform:none;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+.row.move {
+  display: flex;
+  /* animation: move 30s linear infinite;  */
+}
+
+.pentagon-logo {
+  width: 140px;
+  height: 145.5px; 
+  margin: 0 auto; 
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  position: relative;
+  
+}
+.pentagon-logo:hover{
+  transform: scale(1.1);
+}
+.pentagon-logo img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+
+
+

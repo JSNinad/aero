@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.show {
+  display: flex
+}
+
+.hide {
+  display: none;
+}
+.close-flex {
+  display: flex;
+}
+
+.details ul {
+  position: relative;
+  top: 203px;
+  font-weight: bold;
+}
+
+.rules h2 {
+  font-size: 1.7rem;
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+/* .btn {
+  background-color: rgb(255, 2, 40);
+} */
+.container-fluid-custom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Iceland', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.navigate,
+.links,
+.reach-us {
+  flex: 1;
+  background: black;
+  color: white;
+  /* padding: 10px;  */
+}
+.icons a{
+  text-decoration: none;
+  color: inherit
+}
+.card-footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+
+.list-group-item {
+  background-color: black;
+  color: white;
+}
+
+.footer-icon {
+  font-size: 24px;
+}
+
+.icons .footer-icon {
+  margin-right: 16px;
+}
+
+.event-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card-header-custom {
+  border-bottom: 2px solid #fff;
+  text-align: center; 
+  margin-bottom: 16px; 
+}
+
+.list-group-item .text-decoration-none.text-white:hover {
+  color: yellow !important;
+  transition: color 0.3s; /* Optional: Add a smooth transition effect */
+}
